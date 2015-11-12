@@ -1,0 +1,251 @@
+ 
+/* ..........................................GENERAL................................ */
+ 
+body{
+
+	background-color: black;
+}
+
+.container{
+
+	background-color: white;
+	padding: 0;
+}
+
+
+.col-md-1{
+	height: 800px;
+	background-color: black;
+}
+
+.col-md-12{
+	padding: 0;
+}
+
+ p,h1,h2,ul,li
+ {
+ font-family: Palatino Linotype; 
+}
+
+h2{
+	color: #b31217;
+	font-size: 26px;
+}
+
+p{
+	font-size: 16px;
+	margin: 25px;
+}
+
+
+/* ..........................................NAVBAR................................ */
+
+#bs-example-navbar-collapse-1{
+	background-color: #403838;
+	border-radius: 0px;	
+}
+
+#bs-example-navbar-collapse-1 a{
+	color: white;
+	margin-right: 5px;
+	margin-left: 5px;
+	font-size: 18px;
+
+}
+
+#bs-example-navbar-collapse-1 a:hover{
+color: white;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) ,
+	 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
+}
+
+
+
+#navbootstrap {
+	
+	margin-left: 15%;
+}
+
+
+/* ..........................................TITRES................................ */
+.subtitle {
+  margin: 1em 0 1em 0;
+}
+
+/* ................... H1 ................................ */
+
+.fancy {
+  line-height: 0.3;
+  padding-left: 40px;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+ {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 0px solid black;
+  top: 0;
+  width: 280px;
+}
+
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* ...................Titres ................................ */
+
+.fancy2 {
+  padding-left: 90px;
+}
+.fancy2 span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy2 span:before{
+  content: "";
+  position: absolute;
+  height: 20px;
+  border-bottom: 1px solid black;
+  border-top: 0px solid black;
+  top: 0;
+  width: 60px;
+}
+
+.fancy2 span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy2 span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+/* ..........................................BOXASIDE................................ */
+
+#boxaside{
+	color: white;
+	position: fixed;
+	background-color: #403838;
+	opacity:1 ;
+	margin-top: 200px;
+	height: 120px;
+	border-radius: 8px;
+}
+
+
+#boxaside ul{
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+#boxaside li{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#boxaside a {
+	color: white;
+	text-decoration: none;
+}
+
+
+#boxaside a:hover{
+	color: white;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) ,
+	 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
+	 text-decoration: none;
+}
+
+#imgyoutube{
+	width: 70px;
+	height: 56px;
+	margin-left: 10px;
+}
+
+/* ..........................................FOOTER................................ */
+
+
+
+footer{
+	height: 100px;
+	background-color: #403838;
+	border-radius: 0px;	
+	
+}
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+
+footer a:hover{
+	color: white;
+	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) ,
+	 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
+}
+
+
+footer a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+footer a:link{
+	text-decoration: none;
+	color: white;
+}
+
+footer a:active{
+	text-decoration: none;
+	color: white;
+}
+
+footer p{
+	display: inline-block;
+	padding-left: 30px;
+	padding-top: 35px;
+}
+
+#logofooter{
+	display: inline-block;
+	float: right;
+	margin-top: 2.5%;
+
+}
+/* ..........................................BOOSTRAP OVERWRITE................................ */
+
+#searchbar{
+	float: right;
+	display: inline;
+}
+
+
+@media (min-width: 768px)
+.navbar-left {
+    display: inline;
+}
+
+.navbar-left {
+    float: Right !important;
+}
+
+.navbar-default {
+    /* background-color: #f8f8f8; */
+    border-color: #403838;
+}
+
+    
+.navbar {
+    border-radius: 0px;
+}

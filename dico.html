@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>PianoMorceaux</title>
+        <meta charset="utf-8">                           <!-- Police européenne -->
+        <meta name="robots" content="noindex, nofollow"> <!-- NE PAS ETRE REFERENCE !!  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- Leave those next 4 lines if you care about users using IE8 -->
+        <!--[if lt IE 9]>
+        <![endif]-->
+        <!-- Balise meta responsive ici ! -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Responsive-->
+      <link rel="stylesheet"; type="text/css" href="pianomorceaux.css"/>    <!--Feuille CSS-->
+
+    </head>
+
+
+    <body id="body">   
+
+<div class="container"> <!-- ....................................................Container........................................ -->
+ 
+    <div class="col-md-12">  <!-- ............................................Colonne 2............................................. -->
+
+          <header>
+                <div id="logo" >    <!-- Logo du site -->
+                     <a href="accueil.html"> 
+                        <p align="center"><img src="img/logosite.jpg" class="img-responsive" alt="logo-pianomorceaux" id="imglogo"></a>       
+                        </p>
+                </div>
+
+
+<nav class="navbar navbar-default"> <!-- ....................................NAVBAR RESPONSIVE BOOTSTRAP........................................ -->
+      
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="navbootstrap" class="nav navbar-nav">
+        <li><a href="index.html" class="scrollTo">Accueil<span class="sr-only">(current)</span></a></li>
+        <li><a href="morceaux.html" class="scrollTo">Morceaux</a></li>
+        <li><a href="apprendre.html" class="scrollTo">Apprendre</a></li>
+        <li><a href="dico.html" class="scrollTo">Dictionnaire d'Accords</a></li>
+        <li><a href="contact.html" class="scrollTo">Contact</a></li>
+      </ul>
+<!--
+          <form id="searchbar"class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+
+  -->
+    </div><!-- /.navbar-collapse -->
+</nav>
+<!-- FIN DE LA NAVBAR RESPONSIVE BOOTSTRAP-->
+
+             </header>
+
+        <h1 class="subtitle fancy2"><span>Dictionnaire d'accords</span></h1>
+
+                  
+
+
+
+ <!--.........................................................................Dico Accords Gad-->
+          <div class="container">
+
+<div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+        <label for="sel1">Accord :</label>
+        <select class="form-control" id="accord">
+
+          <option value="c">C (Do)</option>
+          <option value="cdiez">C#/Db (Do# ou Réb)</option>
+          <option value="d">D (Ré)</option>
+          <option value="ddiez">D#/Eb (Ré# ou Mib)</option>
+          <option value="e">E (Mi)</option>
+          <option value="f">F (Fa)</option>
+          <option value="fdiez">F#/Gb (Fa# ou Solb)</option>
+          <option value="g">G (Sol)</option>
+          <option value="gdiez">G#/Ab (Sol# ou Lab)</option>
+          <option value="a">A (La)</option>
+          <option value="adiez">A#/Bb (La# ou Sib)</option>
+          <option value="b">B (Si)</option>
+          
+        </select>
+      </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+        <label for="sel1">Mode :</label>
+        <select class="form-control" id="minmaj">
+          <option value="maj">Maj</option>
+          <option value="min">Min</option>
+          <option value="dim">Dim.</option>
+        </select>
+      </div>
+        </div>
+        <div class="col-md-2">
+          <div class="form-group">
+        <label for="sel1">Dimension (facultatif) :</label>
+        <select class="form-control" id="dim">
+          <option></option>
+          <option value="7">7</option>
+          <option value="maj7">Maj7</option>
+          
+        </select>
+      </div>
+        </div>
+        <div class="col-md-2"> <button id="go" type="button" class="btn btn-primary">Go</button></div>
+</div><!--end row-->
+<div class="row">
+  <img id="output"class="center-block" src="img/accord/gifclavier/gifload.gif">
+</div>
+</div><!-- end container-->            
+
+
+
+           <footer class="footer">
+              
+        <p class="text-muted">Place sticky footer content here.</p>
+      
+    </footer>
+
+
+
+</div> <!-- ....................................................Fin du Container........................................ -->
+
+
+         <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="global.js"></script>
+
+    </body>
+
+</html>
