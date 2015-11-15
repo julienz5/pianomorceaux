@@ -12,6 +12,9 @@ body{
 	padding: 0;
 }
 
+.row{
+	width: 100%;
+}
 
 .col-md-12{
 	padding: 0;
