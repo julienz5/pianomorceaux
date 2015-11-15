@@ -308,14 +308,14 @@ footer p{
 	}
 }
 
-@media (max-width: 570px){
+/*@media (max-width: 570px){
 	footer img{
 		width: 16px;
 		margin: 10px;
 		margin-top: 15px;
 	}
 }
-
+*/
 
 footer img{
 	float: right;
