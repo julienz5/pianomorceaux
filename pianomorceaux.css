@@ -12,6 +12,7 @@ body{
 	padding: 0;
 }
 
+
 .row{
 	width: 100%;
 }
@@ -25,9 +26,13 @@ body{
  font-family: Palatino Linotype; 
 }
 
+h1{
+	font-size: 30px;
+}
+
 h2{
 	color: #b31217;
-	font-size: 26px;
+	font-size: 22px;
 }
 
 p{
@@ -193,8 +198,6 @@ p{
 
 
 
-
-
 /* ..........................................Morceaux................................ */
 
 
@@ -209,8 +212,8 @@ p{
 display: inherit;	
 margin: auto;
 margin-top: 10px;
+width: 60px;
 }
-
 
 
 .imgyoutube:hover{
@@ -220,6 +223,19 @@ opacity: 0.7;
 .lienyoutube{
 	display: inherit;
 }
+
+.imgpdf{
+display: inherit;	
+margin: auto;
+margin-top: 10px;
+height: 60px;
+}
+
+
+.imgpdf:hover{
+opacity: 0.7;
+}
+
 
 /* ..........................................BOXASIDE................................ */
 
@@ -293,6 +309,19 @@ footer p{
 	display: inline-block;
 }
 
+@media (max-width: 767px){
+	footer p{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 370px){
+	footer p{
+		font-size: 9px;
+	}
+}
+
+
 @media (min-width: 768px){
 	footer img{
 		width: 50px;
@@ -315,7 +344,6 @@ footer p{
 		margin-top: 15px;
 	}
 }
-
 
 footer img{
 	float: right;
