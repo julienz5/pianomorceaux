@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>PianoMorceaux</title>
+        <meta charset="utf-8">                           <!-- Police européenne -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- Leave those next 4 lines if you care about users using IE8 -->
+        <!--[if lt IE 9]>
+        <![endif]-->
+        <!-- Balise meta responsive ici ! -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--Responsive-->
+      <link rel="stylesheet"; type="text/css" href="pianomorceaux.css"/>    <!--Feuille CSS-->
+
+    </head>
+
+
+    <body id="body">   
+
+<div class="container"> <!-- ....................................................Container........................................ -->
+
+
+    <div class="col-md-12">  <!-- .............................................Colonne ............................................ -->
+
+          <header>
+                <div id="logo" >    <!-- Logo du site -->
+                     <a href="index.html"> 
+                        <p align="center"><img src="img/logo/logoheader.jpg" class="img-responsive" alt="logo-pianomorceaux" id="imglogo"></a>       
+                        </p>
+                </div>
+
+
+<nav class="navbar navbar-default cl-effect-1"> <!-- ...................................NAVBAR RESPONSIVE BOOTSTRAP........................................ -->
+      
+        <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul id="navbootstrap" class="nav navbar-nav">
+        <li><a href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
+        <li><a href="morceaux.html">Morceaux</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apprendre
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="apprendre.html">Morceaux d'apprentissage</a></li> 
+            <li><a href="oreille.html">Travailler son oreille</a></li>
+            <li><a href="dico.html">Dictionnaire d'Accords</a></li>
+          </ul>
+        </li>
+
+        
+        
+        <li> <a target="_blank" href="https://www.youtube.com/channel/UCrHIy7Q9gMHuorotrxge62A">Chaîne YouTube</a></li>
+      </ul>
+
+     
+    </div>
+</nav>
+<!-- FIN DE LA NAVBAR RESPONSIVE BOOTSTRAP-->
+
+             </header>
+
+
+
+
+<h1 class="subtitle fancy2"><span>Travaillez votre oreille</span></h1>
+
+        <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains. Haï
+        </p>
+
+
+<h2 class="subtitle fancy2"><span>Mineur ou majeur ?</span></h2>
+
+<div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
+
+
+    <audio id="player" controls src="sonaccords/airplanes.mp3" accord="majeur"></audio>
+    <button onclick="randomSon()" id="raccord" type="button" class="btn btn-primary"><i class="fa fa-undo"></i></button>
+
+    <!-- <audio onload="randomSon()" controls src="sonaccords/" id="son_accord"></audio>
+ -->
+      <form>
+  <input type="radio" name="accord" value="mineur"> Mineur
+  <input type="radio" name="accord" value="majeur"> Majeur
+  <button onclick="getAnswer()" id="answer" type="button" class="btn btn-primary"><i class="fa fa-check-square-o"></i></button>
+</form>
+<div id="msg" class="" role="alert"></div>
+
+
+
+
+
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+
+         <footer class="footer"><!-- ........................................Footer.................-->
+
+         <div class="col-md-4 col-sm-3 col-xs-4">     
+        <a  href="cgu.html"><p style="color:#6D6E71">Conditions Générales d'Utilisation</p></a>
+         </div>
+         <div class="col-md-4 col-sm-3 col-xs-4"> 
+     
+         </div>
+         <div class="col-md-4 col-sm-4 col-xs-4"> 
+        <a target="_blank"href="https://plus.google.com/103942680014594308346/about"><img class="img-responsive" src="img/googlefooter.png"></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCrHIy7Q9gMHuorotrxge62A"><img class="img-responsive" src="img/youtubefooter.png"></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+</div> <!-- ....................................................Fin du Container........................................ -->
+
+
+         <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="global.js"></script>
+
+
+<!-- ....................................................Script Quizz ........................................ -->
+
+    <script type="text/javascript">
+      function randomSon(){
+/*var tabSon = new Array();
+   tabSon[0]  = "airplanes.mp3";
+   tabSon[1]  = "paperplanes.mp3";
+   tabSon[2]  = "power.mp3";*/
+        var tabSon = [{"son":"airplanes.mp3","accord":"mineur"},{"son":"paperplanes.mp3","accord":"majeur"},{"son":"power.mp3","accord":"majeur"}];
+         //document.getElementById('son_accord').src += tabSon[Math.round(Math.random()*2)];
+        var r = Math.round(Math.random() * tabSon.length-1);
+        var son = "sonaccords/" + tabSon[r]["son"];
+        var accord  = tabSon[r]["accord"];
+        console.log(son,accord);
+        var player = document.getElementById('player');
+        player.src = son;
+        player.setAttribute("accord",accord);
+   
+   //$("#aaa").attr("src", "img/" + tabSon[Math.round(Math.random()*2)]);
+    }
+    function getAnswer(){
+      var radios = document.getElementsByName('accord');
+      var player = document.getElementById('player');
+      var msg = document.getElementById('msg');
+      var accord= player.getAttribute("accord");
+
+      for (var i = 0, length = radios.length; i < length; i++) {
+          if ((radios[i].checked)) {
+              console.log(radios[i].value, accord);
+              if (radios[i].value == accord){
+                msg.className = "alert alert-success";
+                msg.innerHTML = "Good answer";
+              }else{
+                msg.className = "alert alert-danger";
+                msg.innerHTML = "Wrong answer";
+              }
+              // only one radio can be logically checked, don't check the rest
+              break;
+          }
+      }
+    }
+</script>
+
+
+
+
+    </body>
+
+</html>

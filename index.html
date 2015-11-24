@@ -52,25 +52,25 @@
       <ul id="navbootstrap" class="nav navbar-nav">
         <li><a href="index.html">Accueil<span class="sr-only">(current)</span></a></li>
         <li><a href="morceaux.html">Morceaux</a></li>
-        <li><a href="apprendre.html">Apprendre</a></li>
-        <li><a href="dico.html">Dictionnaire d'Accords</a></li>
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Apprendre
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="apprendre.html">Morceaux d'apprentissage</a></li> 
+            <li><a href="oreille.html">Travailler son oreille</a></li>
+            <li><a href="dico.html">Dictionnaire d'Accords</a></li>
+          </ul>
+        </li>
+
+        
+        
         <li> <a target="_blank" href="https://www.youtube.com/channel/UCrHIy7Q9gMHuorotrxge62A">Chaîne YouTube</a></li>
       </ul>
 
+     
+    </div>
 
- 
-
-       
     
-
-       <!--   <form id="searchbar"class="navbar-form navbar-left" role="search">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Search">
-            </div>
-            <button type="submit" class="btn btn-default">Submit</button>
-          </form>     -->
-    </div><!-- /.navbar-collapse -->
-</nav>
 <!-- FIN DE LA NAVBAR RESPONSIVE BOOTSTRAP-->
 
              </header>
@@ -91,7 +91,84 @@
     <div class="container">
   <div class="row gallery">
 
-    <div class="col-md-3 col-sm-4 col-xs-6"><a href="morceaux.html#iseefire">
+
+          <ul class="grid cs-style-2">
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure>
+            <a href="morceaux.html#iseefire">
+             <img title="I See Fire - Ed Sheeran" src="img/morceaux/iseefire.jpg"></a>
+            <figcaption>
+              <h3>I See Fire</h3>
+              <span>Ed Sheeran</span>
+              <a href="morceaux.html#iseefire"><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+     
+
+
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure>
+            <a href="morceaux.html#allofme">
+            <img title="All Of Me - John Legend" class="img-responsive" src="img/morceaux/allofme.jpg" ></a>
+            <figcaption>
+              <h3>All of Me</h3>
+              <span>John Legend</span>
+              <a href="morceaux.html#allofme"><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+
+
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure>
+            <a href="dico.html">
+            <img title="Dictionnaire d'accords" class="img-responsive" src="img/pianoart.jpg" /></a>
+            <figcaption>
+              <h3>Dictionnaire d'Accords</h3>
+              <span>PianoMorceaux</span>
+              <a href="dico.html"><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure> <a href="morceaux.html#quialedroit">
+              <img title="Qui a le Droit - Patrick Bruel" class="img-responsive" src="img/morceaux/quialedroit.jpg" /></a>          
+            <figcaption>
+              <h3>Qui a le droit</h3>
+              <span>Patrick Bruel</span>
+              <a href="morceaux.html#quialedroit"><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure> <a href="morceaux.html#aucafedesdelices">
+              <img title="Au Café des Délices - Patrick Bruel" class="img-responsive" src="img/morceaux/aucafedesdelices.jpg" /></a>
+            <figcaption>
+              <h3>Au Café des Délices</h3>
+              <span>Patrick Bruel</span>
+              <a href="morceaux.html#aucafedesdelices"><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li class="col-md-3 col-sm-4 col-xs-6">
+          <figure>
+            <img class="img-responsive" src="http://th03.deviantart.net/fs70/200H/f/2010/256/0/9/painting_of_nature_by_dhikagraph-d2ynalq.jpg" />
+            <figcaption>
+              <h3>Camera</h3>
+              <span>Jacob Cummings</span>
+              <a><i class="fa fa-music"></i></a>
+            </figcaption>
+          </figure>
+        </li>
+
+        
+      </ul>
+
+<!--     <div class="col-md-3 col-sm-4 col-xs-6"><a href="morceaux.html#iseefire">
       <img title="I See Fire - Ed Sheeran" class="img-responsive" src="img/morceaux/iseefire.jpg" /></a></div>     
 
         <div class="col-md-3 col-sm-4 col-xs-6"><a href="morceaux.html#allofme">
@@ -114,7 +191,7 @@
         <img class="img-responsive" src="http://2.bp.blogspot.com/-H6MAoWN-UIE/TuRwLbHRSWI/AAAAAAAABBk/89iiEulVsyg/s400/Free%2BNature%2BPhoto.jpg" /></div>
 
         <div class="col-md-3 col-sm-4 col-xs-6">
-          <img class="img-responsive" src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg" /></div>
+          <img class="img-responsive" src="http://blog.arborday.org/wp-content/uploads/2013/02/NEC1-300x200.jpg" /></div> -->
 
     </div>
 </div>
@@ -123,6 +200,7 @@
 <!--.................... End Gallery...................... -->
 
 
+<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
           
 
             <footer class="footer">
@@ -131,7 +209,6 @@
         <a  href="cgu.html"><p style="color:#6D6E71">Conditions Générales d'Utilisation</p></a>
          </div>
          <div class="col-md-4 col-sm-3 col-xs-4"> 
-        <a class="scrollTo" href="#body"> <p >Retour en haut de la page &uarr;</p> </a>
          </div>
          <div class="col-md-4 col-sm-4 col-xs-4"> 
         <a target="_blank"href="https://plus.google.com/103942680014594308346/about"><img class="img-responsive" src="img/googlefooter.png"></a>
@@ -152,6 +229,7 @@
          <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../Ressources/CaptionHoverEffects/js/modernizr.custom.js"></script>    
     <script type="text/javascript" src="global.js"></script>
 
     </body>

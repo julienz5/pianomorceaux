@@ -13,9 +13,6 @@ body{
 }
 
 
-.row{
-	width: 100%;
-}
 
 .col-md-12{
 	padding: 0;
@@ -45,7 +42,7 @@ p{
 }
 
 
-/* ..........................................NAVBAR................................ */
+/* ........................................................NAVBAR................................ */
 
 
 	@media (min-width: 768px){
@@ -77,6 +74,22 @@ p{
 
 }
 
+/* ..........................................OVERRIDE DROPDOWN BOOTSTRAP.. */
+
+.dropdown-menu {
+	background-color: #403838;
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus{
+	background-color: #403838;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: #403838;
+}
+
+
+/* ..........................................HOVER NAVBAR.. */
 .cl-effect-1 a::before,
 .cl-effect-1 a::after {
 	display: inline-block;
@@ -198,8 +211,106 @@ p{
 
 
 
+/* .............................................Caption Style 2 ........................*/
+
+.grid {
+	padding: 20px 20px 100px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	margin: 0;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #403838;
+	color: #939497;
+	/*background: #2c3f52;*/
+	/*color: #ed4e6e;*/
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background:#b31217; 
+	/*background: #ed4e6e;*/
+	color: #fff;
+}
+
+
+
+.cs-style-2 figure img {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-2 figure:hover img,
+.cs-style-2 figure.cs-hover img {
+	-webkit-transform: translateY(-90px);
+	-moz-transform: translateY(-90px);
+	-ms-transform: translateY(-90px);
+	transform: translateY(-90px);
+}
+
+.cs-style-2 figcaption {
+	height: 90px;
+	width: 100%;
+	top: auto;
+	bottom: 0;
+}
+
+.cs-style-2 figcaption a {
+	position: absolute;
+	right: 20px;
+	top: 30px;
+}
+
+
+
+
+
+
+
 /* ..........................................Morceaux................................ */
 
+#morceaux .row{
+	width: 100%;
+}
 
 .item{
 	padding: 10px;
@@ -237,43 +348,41 @@ opacity: 0.7;
 }
 
 
-/* ..........................................BOXASIDE................................ */
 
-#boxaside{
-	color: white;
-	position: absolute;
-	top: 0;
-	right: 0;
-	background-color: #403838;
-	opacity:1 ;
-	margin-top: 200px;
-	height: 120px;
-	border-radius: 8px;
+/* ..........................................OREILLE................................ */
+
+#difficulte p{
+	margin-top: -15px;
+	margin-left: 92px;
 }
 
 
-#boxaside ul{
-	list-style-type: none;
-	padding: 0;
-	text-align: center;
+/* ..........................................BACK TO TOP................................ */
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #f5f5f5;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
 }
-
-#boxaside li{
-	margin-top: 10px;
-	margin-bottom: 10px;
+#back-to-top:hover {
+    background: #e9ebec;
 }
-
-#boxaside a {
-	color: white;
-	text-decoration: none;
-}
-
-
-#boxaside a:hover{
-	color: white;
-	text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) ,
-	 0 0 30px rgba(255,255,255,1) , 0 0 40px #ffffff , 0 0 70px #ffffff , 0 0 80px #ffffff , 0 0 100px #ffffff ;
-	 text-decoration: none;
+#back-to-top.show {
+    opacity: 1;
 }
 
 
