@@ -82,9 +82,13 @@
         <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains. Haï
         </p>
 
+<!-- ...................................Mineur Majeur ........................................ -->
 
 <h2 class="subtitle fancy2"><span>Mineur ou majeur ?</span></h2>
 
+
+<div class="row">
+  <div class="col-md-4">
 <div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
 
 
@@ -100,9 +104,48 @@
 </form>
 <div id="msg" class="" role="alert"></div>
 
+</div> <!-- fin de colonne md 4 -->
+
+  <div class="col-md-8">
+     <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains.
+      </p>
+  </div> <!-- fin de la collone md 8 -->
 
 
+</div> <!-- fin de row -->
 
+<!-- ...................................Accords 7 ou NON ........................................ -->
+
+
+<h2 class="subtitle fancy2"><span>Accords 7 ou non ?</span></h2>
+
+<div class="row">
+  <div class="col-md-4">
+    
+<div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
+
+ <audio id="player2" controls src="sonaccords/.mp3" accord="acc"></audio>
+    <button onclick="randomSon2()" id="raccord2" type="button" class="btn btn-primary"><i class="fa fa-undo"></i></button>
+
+     <form>
+  <input type="radio" name="accord" value="acc7"> Accord 7
+  <input type="radio" name="accord" value="acc"> Accord simple
+  <button onclick="getAnswer2()" id="answer2" type="button" class="btn btn-primary"><i class="fa fa-check-square-o"></i></button>
+</form>
+<div id="msg2" class="" role="alert"></div>
+
+</div> <!-- fin de colonne md 4 -->
+
+  <div class="col-md-8">
+     <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains.
+      </p>
+  </div> <!-- fin de la collone md 8 -->
+
+
+</div> <!-- fin de row -->
+
+
+<!-- ...................................Fin exercices ........................................ -->
 
 <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
@@ -135,8 +178,7 @@
     <script type="text/javascript" src="global.js"></script>
 
 
-<!-- ....................................................Script Quizz ........................................ -->
-
+<!-- ....................................................Script Quizz 1 ........................................ -->
     <script type="text/javascript">
       function randomSon(){
 /*var tabSon = new Array();
@@ -152,13 +194,53 @@
         var player = document.getElementById('player');
         player.src = son;
         player.setAttribute("accord",accord);
-   
    //$("#aaa").attr("src", "img/" + tabSon[Math.round(Math.random()*2)]);
     }
     function getAnswer(){
       var radios = document.getElementsByName('accord');
       var player = document.getElementById('player');
       var msg = document.getElementById('msg');
+      var accord= player.getAttribute("accord");
+
+      for (var i = 0, length = radios.length; i < length; i++) {
+          if ((radios[i].checked)) {
+              console.log(radios[i].value, accord);
+              if (radios[i].value == accord){
+                msg.className = "alert alert-success";
+                msg.innerHTML = "Good answer";
+              }else{
+                msg.className = "alert alert-danger";
+                msg.innerHTML = "Wrong answer";
+              }
+              // only one radio can be logically checked, don't check the rest
+              break;
+          }
+      }
+    }
+</script>
+
+<!-- ....................................................Script Quizz 2 ........................................ -->
+    <script type="text/javascript">
+      function randomSon2(){
+/*var tabSon = new Array();
+   tabSon[0]  = "airplanes.mp3";
+   tabSon[1]  = "paperplanes.mp3";
+   tabSon[2]  = "power.mp3";*/
+        var tabSon = [{"son":"jayz.mp3","accord":"acc7"},{"son":"kanyewest.mp3","accord":"acc"},{"son":"kidcudi.mp3","accord":"acc7"}];
+         //document.getElementById('son_accord').src += tabSon[Math.round(Math.random()*2)];
+        var r = Math.round(Math.random() * tabSon.length-1);
+        var son = "sonaccords/" + tabSon[r]["son"];
+        var accord  = tabSon[r]["accord"];
+        console.log(son,accord);
+        var player = document.getElementById('player2');
+        player.src = son;
+        player.setAttribute("accord",accord);
+   //$("#aaa").attr("src", "img/" + tabSon[Math.round(Math.random()*2)]);
+    }
+    function getAnswer2(){
+      var radios = document.getElementsByName('accord');
+      var player = document.getElementById('player2');
+      var msg = document.getElementById('msg2');
       var accord= player.getAttribute("accord");
 
       for (var i = 0, length = radios.length; i < length; i++) {
