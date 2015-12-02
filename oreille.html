@@ -93,21 +93,23 @@
 
 
     <audio id="player" controls src="sonaccords/airplanes.mp3" accord="majeur"></audio>
-    <button onclick="randomSon()" id="raccord" type="button" class="btn btn-primary"><i class="fa fa-undo"></i></button>
+    <button onclick="randomSon()" id="raccord" type="button" class="btn btn-primary randombutton"><i class="fa fa-undo"></i></button>
 
     <!-- <audio onload="randomSon()" controls src="sonaccords/" id="son_accord"></audio>
  -->
       <form>
   <input type="radio" name="accord" value="mineur"> Mineur
   <input type="radio" name="accord" value="majeur"> Majeur
-  <button onclick="getAnswer()" id="answer" type="button" class="btn btn-primary"><i class="fa fa-check-square-o"></i></button>
+  <button onclick="getAnswer()" id="answer" type="button" class="btn btn-primary answerbutton"><i class="fa fa-check-square-o"></i></button>
 </form>
 <div id="msg" class="" role="alert"></div>
 
 </div> <!-- fin de colonne md 4 -->
 
-  <div class="col-md-8">
-     <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains.
+  <div class="col-md-8 textexercice">
+     <p>     Les accords que vous pouvez entendre dans cet exercices sont des accords à 3 notes, composés d'une tonique, d'une tierce et d'une quinte.
+       Ce qui différencie un accord mineur d'un accord majeur est sa tierce. En effet, on dit qu'un accord est majeur (ou mineur) si sa tierce l'est aussi. 
+       Une tierce mineure est un demi-ton plus grave qu'une tierce majeure. Par exemple, un accord de Do majeur (C) sera composé des notes Do-Mi-Sol, tandis qu'un accord de Do mineur sera composé des notes Do-Mi bémol-Sol. A l'oreille, cette petite différence s'entend fortement. Constatez plutôt par vous-mêmes, et essayez de déterminer si les accords générés sont mineurs ou majeurs ! 
       </p>
   </div> <!-- fin de la collone md 8 -->
 
@@ -117,7 +119,7 @@
 <!-- ...................................Accords 7 ou NON ........................................ -->
 
 
-<h2 class="subtitle fancy2"><span>Accords 7 ou non ?</span></h2>
+<h2 class="subtitle fancy2"><span>Accords 7 ?</span></h2>
 
 <div class="row">
   <div class="col-md-4">
@@ -125,19 +127,19 @@
 <div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
 
  <audio id="player2" controls src="sonaccords/.mp3" accord="acc"></audio>
-    <button onclick="randomSon2()" id="raccord2" type="button" class="btn btn-primary"><i class="fa fa-undo"></i></button>
+    <button onclick="randomSon2()" id="raccord2" type="button" class="btn btn-primary randombutton"><i class="fa fa-undo"></i></button>
 
      <form>
   <input type="radio" name="accord" value="acc7"> Accord 7
   <input type="radio" name="accord" value="acc"> Accord simple
-  <button onclick="getAnswer2()" id="answer2" type="button" class="btn btn-primary"><i class="fa fa-check-square-o"></i></button>
+  <button onclick="getAnswer2()" id="answer2" type="button" class="btn btn-primary answerbutton"><i class="fa fa-check-square-o"></i></button>
 </form>
 <div id="msg2" class="" role="alert"></div>
 
 </div> <!-- fin de colonne md 4 -->
 
-  <div class="col-md-8">
-     <p>     "Savant et philosophe, c'est contrevenir aux instructions que nous a révélée l'histoire, même la mort, la lèvre supérieure, lerelèvement quotidien en  longitude et en latitude ? Loup, chiens et chasseurs avaient bien fait, beau, bien fait, mais je les maltraitais. Tous trois, muets, épuisés de fatigue, de cette même folie passagère lorsqu'elle s'y refusa toujours, sachant bien quel en serait le mauvais marchand. Vice-roi, gouverneur et capitaine général de l'esprit fait comme nous, fait la leçon au grand-père... Fripouille ou pas, la jeune prêtresse but lentement son verre de vodka tremblait entre ses mains.
+  <div class="col-md-8 textexercice">
+     <p>     Les accords 7 sont composés d'une tonique, d'une tierce, d'une quinte, et d'une septième. Dans cet exercice, vous trouverez un mélange d'accords 7 et d'accords simplement mineurs ou majeur (c'est à dire composés seulement d'une tonique, d'une tierce et d'une quinte). Les accords 7 sont facilement identifiables à l'oreille, et sont très largement employés dans les musiques Jazz. Essayez de déterminer si les accords générés sont des accords 7 ou non.
       </p>
   </div> <!-- fin de la collone md 8 -->
 
@@ -178,7 +180,7 @@
     <script type="text/javascript" src="global.js"></script>
 
 
-<!-- ....................................................Script Quizz 1 ........................................ -->
+<!-- ....................................................Script MINMAJ ........................................ -->
     <script type="text/javascript">
       function randomSon(){
 /*var tabSon = new Array();
@@ -189,8 +191,8 @@
          //document.getElementById('son_accord').src += tabSon[Math.round(Math.random()*2)];
         var r = Math.round(Math.random() * tabSon.length-1);
         var son = "sonaccords/" + tabSon[r]["son"];
-        var accord  = tabSon[r]["accord"];
-        console.log(son,accord);
+        var accord  = tabSon[r]["accor"];
+d        console.log(son,accord);
         var player = document.getElementById('player');
         player.src = son;
         player.setAttribute("accord",accord);
@@ -219,7 +221,7 @@
     }
 </script>
 
-<!-- ....................................................Script Quizz 2 ........................................ -->
+<!-- ....................................................Script ACC7 ........................................ -->
     <script type="text/javascript">
       function randomSon2(){
 /*var tabSon = new Array();

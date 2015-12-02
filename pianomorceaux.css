@@ -5,45 +5,34 @@ body{
 
 	background-color: black;
 }
-
 .container{
 
 	background-color: white;
 	padding: 0;
 }
-
-
-
 .col-md-12{
 	padding: 0;
 }
-
  p,h1,h2,ul,li
  {
  font-family: Palatino Linotype; 
 }
-
 h1{
 	font-size: 30px;
 }
-
 h2{
 	color: #b31217;
 	font-size: 22px;
 }
-
 p{
 	font-size: 16px;
 	margin: 25px;
 }
-
 #logo p{
 	margin:10px;
 }
 
-
 /* ........................................................NAVBAR................................ */
-
 
 	@media (min-width: 768px){
     .navbar-nav{
@@ -54,7 +43,6 @@ p{
        
     }
 }
-
 #bs-example-navbar-collapse-1{
 	background-color: #403838;
 	border-radius: 0px;	
@@ -67,7 +55,6 @@ p{
 	font-size: 18px;
 
 }
-
 
 #bs-example-navbar-collapse-1 a:hover{
 	color: #c6c7c8;
@@ -123,9 +110,6 @@ p{
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 }
-
-
-
 
 /* ..........................................TITRES................................ */
 .subtitle {
@@ -191,7 +175,7 @@ p{
 }
 
 
-/* ..........................................Simple Responsive Image Gallery ................................ */
+/* ..........................................Simple Responsive Image Gallery INDEX................................ */
 
 
 .gallery img {
@@ -209,9 +193,7 @@ p{
  
 }
 
-
-
-/* .............................................Caption Style 2 ........................*/
+/* .............................................Caption Style 2 INDEX........................*/
 
 .grid {
 	padding: 20px 20px 100px 20px;
@@ -271,8 +253,6 @@ p{
 	color: #fff;
 }
 
-
-
 .cs-style-2 figure img {
 	z-index: 10;
 	-webkit-transition: -webkit-transform 0.4s;
@@ -302,10 +282,9 @@ p{
 }
 
 
-
-
-
-
+.grid figcaption a:hover {
+	opacity: 0.7;
+}
 
 /* ..........................................Morceaux................................ */
 
@@ -349,15 +328,33 @@ height: 60px;
 opacity: 0.7;
 }
 
-
-
 /* ..........................................OREILLE................................ */
 
 #difficulte p{
 	margin-top: -15px;
-	margin-left: 92px;
+	margin-left: 78px;
+	font-style: italic;
 }
 
+.textexercice {
+	border: 1px solid #660000;
+	background-color: #FDFCFC;
+	font-family: Palatino Linotype;
+	color: rgb(74, 13, 12);
+	border-radius: 0px;
+}
+
+.randombutton {
+	margin-bottom: 22px;
+}
+
+.randombutton:hover{
+	opacity: 0.85;
+}
+
+.answerbutton:hover{
+	opacity: 0.85;
+}
 
 /* ..........................................BACK TO TOP................................ */
 
@@ -479,3 +476,7 @@ footer img{
     background-color: #403838;
     border-color: #403838;}
 
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
