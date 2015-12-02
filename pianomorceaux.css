@@ -236,8 +236,26 @@ p{
 	margin: 0;
 	padding: 0;
 	color: #fff;
+}
+
+@media (min-width: 800px){
+.grid figcaption h3 {
 	font-size: 18px;
 }
+}
+
+@media (max-width: 799px){
+.grid figcaption h3 {
+	font-size: 12px;
+}
+}
+
+@media (max-width: 799px){
+.grid figcaption span {
+	font-size: 10px;
+}
+}
+
 
 .grid figcaption span:before {
 	content: 'by ';
