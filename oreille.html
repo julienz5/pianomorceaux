@@ -92,7 +92,7 @@
 <div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
 
 
-    <audio id="player" controls src="sonaccords/airplanes.mp3" accord="majeur"></audio>
+    <audio id="player" controls src="sonaccords/minmaj/airplanes.mp3" accord="majeur"></audio>
     <button onclick="randomSon()" id="raccord" type="button" class="btn btn-primary randombutton"><i class="fa fa-undo"></i></button>
 
     <!-- <audio onload="randomSon()" controls src="sonaccords/" id="son_accord"></audio>
@@ -107,7 +107,7 @@
 </div> <!-- fin de colonne md 4 -->
 
   <div class="col-md-8 textexercice">
-     <p>     Les accords que vous pouvez entendre dans cet exercices sont des accords à 3 notes, composés d'une tonique, d'une tierce et d'une quinte.
+     <p>     Les accords que vous pouvez entendre dans cet exercice sont des accords à 3 notes, composés d'une tonique, d'une tierce et d'une quinte.
        Ce qui différencie un accord mineur d'un accord majeur est sa tierce. En effet, on dit qu'un accord est majeur (ou mineur) si sa tierce l'est aussi. 
        Une tierce mineure est un demi-ton plus grave qu'une tierce majeure. Par exemple, un accord de Do majeur (C) sera composé des notes Do-Mi-Sol, tandis qu'un accord de Do mineur sera composé des notes Do-Mi bémol-Sol. A l'oreille, cette petite différence s'entend fortement. Constatez plutôt par vous-mêmes, et essayez de déterminer si les accords générés sont mineurs ou majeurs ! 
       </p>
@@ -126,7 +126,7 @@
     
 <div id="difficulte"><p>Difficulté :<img src="img/etoile.png"></p></div>
 
- <audio id="player2" controls src="sonaccords/.mp3" accord="acc"></audio>
+ <audio id="player2" controls src="sonaccords/Grand Piano - Fazioli - major A.wav" accord="acc"></audio>
     <button onclick="randomSon2()" id="raccord2" type="button" class="btn btn-primary randombutton"><i class="fa fa-undo"></i></button>
 
      <form>
@@ -177,6 +177,7 @@
          <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="ressources/modernizr.custom.js"></script>    
     <script type="text/javascript" src="global.js"></script>
 
 
@@ -189,10 +190,12 @@
    tabSon[2]  = "power.mp3";*/
         var tabSon = [{"son":"airplanes.mp3","accord":"mineur"},{"son":"paperplanes.mp3","accord":"majeur"},{"son":"power.mp3","accord":"majeur"}];
          //document.getElementById('son_accord').src += tabSon[Math.round(Math.random()*2)];
-        var r = Math.round(Math.random() * tabSon.length-1);
-        var son = "sonaccords/" + tabSon[r]["son"];
-        var accord  = tabSon[r]["accor"];
-d        console.log(son,accord);
+         var r  = Math.floor(Math.random() * (tabSon.length - 1));
+        //var r =  Math.round(Math.random() > 0 ? Math.round(Math.random() * tabSon.length);
+        console.log(r, tabSon.length);
+        var son = "sonaccords/minmaj" + "/"+tabSon[r]["son"];
+        var accord  = tabSon[r]["accord"];
+        console.log(son,accord);
         var player = document.getElementById('player');
         player.src = son;
         player.setAttribute("accord",accord);
@@ -230,8 +233,8 @@ d        console.log(son,accord);
    tabSon[2]  = "power.mp3";*/
         var tabSon = [{"son":"jayz.mp3","accord":"acc7"},{"son":"kanyewest.mp3","accord":"acc"},{"son":"kidcudi.mp3","accord":"acc7"}];
          //document.getElementById('son_accord').src += tabSon[Math.round(Math.random()*2)];
-        var r = Math.round(Math.random() * tabSon.length-1);
-        var son = "sonaccords/" + tabSon[r]["son"];
+        var r = Math.round(Math.random() * (tabSon.length-1));
+        var son = "sonaccords/acc7/" + tabSon[r]["son"];
         var accord  = tabSon[r]["accord"];
         console.log(son,accord);
         var player = document.getElementById('player2');

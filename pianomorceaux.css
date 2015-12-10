@@ -374,6 +374,28 @@ opacity: 0.7;
 	opacity: 0.85;
 }
 
+
+/* ..........................................DICO................................ */
+
+
+#go{
+	margin-top: 18px;
+}
+#go:hover{
+	opacity: 0.85;
+}
+.fa-play-circle{
+	font-size: 40px;
+	vertical-align: text-top;
+	margin-left: 10px;
+}
+#buttonplaychord{
+	color: #403838;
+}
+#buttonplaychord:hover{
+	opacity: 0.85;
+}
+
 /* ..........................................BACK TO TOP................................ */
 
 
