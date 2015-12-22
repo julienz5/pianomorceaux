@@ -60,7 +60,7 @@ $('a.read_more').click(function(event){ /* find all a.read_more elements and bin
         $(this).hide();
         $(this).parents('.item').find('.more_text').fadeIn(1000); /* show the .more_text span */
         //GA
-        $(this).parents('.item').find('.more_text').append("<a href='#'class='read_less'>Read less</a>");
+        $(this).parents('.item').find('.more_text').append(/*"<a href='#'class='read_less'>Read less</a>"*/);
         $( ".read_less" ).bind( "click", function() {
         	event.preventDefault();
   		$(this).hide();
